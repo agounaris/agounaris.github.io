@@ -1,102 +1,341 @@
-<!doctype html><html lang=en-us><head><title>Argys Corner</title><meta name=generator content="Hugo 0.82.1"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta name=author content="Argyrios Gounaris"><meta name=description content><link href=/index.xml rel=alternate type=application/rss+xml title="Argys Corner"><link href=/index.xml rel=feed type=application/rss+xml title="Argys Corner"><link rel=canonical href=https://agounaris.github.io/><link rel=icon href=https://agounaris.github.io/favicon.ico><link rel=apple-touch-icon href=https://agounaris.github.io/apple-touch-icon.png><link rel=stylesheet href=https://agounaris.github.io/css/style.css><link rel=stylesheet href=https://agounaris.github.io/css/font-awesome.min.css><link rel=stylesheet href=https://agounaris.github.io/css/monokai.css><link rel=stylesheet href=https://agounaris.github.io/fancybox/jquery.fancybox.css><link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel=stylesheet type=text/css><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel=stylesheet type=text/css><meta property="og:title" content="Argys Corner"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://agounaris.github.io/"><meta itemprop=name content="Argys Corner"><meta itemprop=description content><meta name=twitter:card content="summary"><meta name=twitter:title content="Argys Corner"><meta name=twitter:description content><meta name=twitter:site content="@gohugoio"><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js></script></head><body><div class=container><div id=container><header id=header><div id=header-main class=header-inner><div class=outer><a href=https://agounaris.github.io/ id=logo><i class=logo style=background-image:url(https://agounaris.github.io/css/images/logo.png)></i>
-<span class=site-title>Argys Corner</span></a><nav id=main-nav><a class=main-nav-link href=https://agounaris.github.io/>Home</a>
-<a class=main-nav-link href=https://agounaris.github.io/tags/>Tags</a>
-<a class=main-nav-link href=https://agounaris.github.io/categories/>Categories</a></nav><nav id=sub-nav><div class=profile id=profile-nav><a id=profile-anchor href=javascript:;><img class=avatar src=https://agounaris.github.io/css/images/avatar.png><i class="fa fa-caret-down"></i></a></div></nav><div id=search-form-wrap><form action=//google.com/search method=get accept-charset=utf-8 class=search-form><input type=search name=q class=search-form-input placeholder>
-<button type=submit class=search-form-submit></button>
-<input type=hidden name=sitesearch value=https://agounaris.github.io/></form></div></div></div><div id=main-nav-mobile class="header-sub header-inner"><table class="menu outer"><tbody><tr><td><a class=main-nav-link href=https://agounaris.github.io/>Home</a></td><td><a class=main-nav-link href=https://agounaris.github.io/tags/>Tags</a></td><td><a class=main-nav-link href=https://agounaris.github.io/categories/>Categories</a></td><td><form action=//google.com/search method=get accept-charset=utf-8 class=search-form><input type=search name=q class=search-form-input placeholder=Search>
-<input type=hidden name=sitesearch value=https://agounaris.github.io/></form></td></tr></tbody></table></div></header><div class=outer><aside id=profile><div class="inner profile-inner"><div class="base-info profile-block"><img id=avatar src="https://www.gravatar.com/avatar/4fca794da0cf08804f99048d3c8b39c1?s=100&d=identicon"><h2 id=name>Argyrios Gounaris</h2><h3 id=title>Blogger - Programmer - Gopher</h3><span id=location><i class="fa fa-map-marker"></i>Earth</span>
-<a id=follow href=https://github.com/gohugoio></a></div><div class="article-info profile-block"><div class=article-info-block>18
-<span></span></div><div class=article-info-block>3
-<span></span></div></div><div class="profile-block social-links"><table><tr><td><a href=//github.com/gohugoio target=_blank title=GitHub><i class="fa fa-github"></i></a></td><td><a href=//twitter.com/gohugoio target=_blank title=Twitter><i class="fa fa-twitter"></i></a></td><td><a href=https://agounaris.github.io/index.xml target=_blank title=RSS><i class="fa fa-rss"></i></a></td></tr></table></div></div></aside><section id=main><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/><h1 class=article-title itemprop=name>Stock symbol time series analysis and prediction with ARIMA model</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2017-05-01 12:00:50 +0000 UTC" itemprop=datePublished>2017-05-01</time>
-&#183;
-2795
-&#183;
-14</div></div></header><div class=article-entry itemprop=articleBody><p>This project examines the predictive capabilities of the ARIMA model for time series analysis. To explore the capabilities of the statsmodels library, the Python programming language will be used with jupyter notebook being the runtime environment. Along with the prediction analysis, there will be a demonstration of data retrieval using the yahoo web api, time series transformation, manual and automatic stationarity checks, benchmarking the model versus a naive benchmark, multiple days prediction and multiple symbol prediction mean error checks.</p><p class=article-more-link><a href=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/ data-id=b72943eb21870233534ead91512be6fe class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/><h1 class=article-title itemprop=name>One year developing with Elasticsearch</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2015-02-28 02:13:50 +0000 UTC" itemprop=datePublished>2015-02-28</time>
-&#183;
-1056
-&#183;
-5</div></div></header><div class=article-entry itemprop=articleBody><p>After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution.</p><p class=article-more-link><a href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/ data-id=c4119021870bd3338550b5f0ab6587e7 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/><h1 class=article-title itemprop=name>Play framework, it looks awesome!</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2015-01-18 02:13:50 +0000 UTC" itemprop=datePublished>2015-01-18</time>
-&#183;
-459
-&#183;
-3</div></div></header><div class=article-entry itemprop=articleBody><p>Lately I find myself in a position where I&rsquo;m not sure what I want to learn next and what will be usefull for me career wise. This weekend I wanted to check out the play framework. A scala framework which supports coding in both scala and java.
-I used to work with java for many year but I wanted something else since I wasn&rsquo;t enjoying the ecosystem. I will not get into details on that, java is great as language but there are a lot of applications out there which is nightmare to work with&mldr;</p><p class=article-more-link><a href=https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/ data-id=95eae367588bb47ad80e834a15c25443 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2014/10/05/more-than-one-programming-language/><h1 class=article-title itemprop=name>More than one programming language</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2014-10-05 02:13:50 +0000 UTC" itemprop=datePublished>2014-10-05</time>
-&#183;
-389
-&#183;
-2</div></div></header><div class=article-entry itemprop=articleBody><p>Why do we have so many programming languages?
-I don&rsquo;t know about you but this is a question I&rsquo;m asking myself constantly when I read about new technologies and methods. My opinion is that we have so many programming languages for two basic reasons.
-The first reason is kinda obvious and it&rsquo;s called evolution. Our need to build more complex systems, our need to simplify common solutions, the software being available to more people has led us into creating new tools trying to solve those increasingly complicated problems.</p><p class=article-more-link><a href=https://agounaris.github.io/2014/10/05/more-than-one-programming-language/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2014/10/05/more-than-one-programming-language/ data-id=952f948a35f56967ccd2d5f8ac511d92 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2014/10/01/a-few-thoughts-on-programming-and-not-only-ego.../><h1 class=article-title itemprop=name>A few thoughts on programming, and not only, ego...</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2014-10-01 02:13:50 +0000 UTC" itemprop=datePublished>2014-10-01</time>
-&#183;
-251
-&#183;
-2</div></div></header><div class=article-entry itemprop=articleBody><p>A lot of people are talking about collaboration, programming disciplines, agile methodology &mldr;etc as basic principles of a modern software development team. Well &mldr; bullocks.
-One of the basic things that can make a team wither or thrive is the amount of presence of programming ego. It&rsquo;s our willingness to accept a different opinion as long as it&rsquo;s owner presents valid arguments to support this opinion.
-How many times in your career haven&rsquo;t you heard arguments like &ldquo;just do it&rdquo;, &ldquo;he/she knows because he/she is good&rdquo;, &ldquo;it&rsquo;s better because I have done it in the past&rdquo; and lot more funny expressions.</p><p class=article-more-link><a href=https://agounaris.github.io/2014/10/01/a-few-thoughts-on-programming-and-not-only-ego.../></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2014/10/01/a-few-thoughts-on-programming-and-not-only-ego.../ data-id=cf513d3092f4b013138d7e74cda67f0f class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2014/02/12/php-auto-correction/spell-check-speed-testing/><h1 class=article-title itemprop=name>PHP Auto correction/spell check, speed testing</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2014-02-12 02:13:50 +0000 UTC" itemprop=datePublished>2014-02-12</time>
-&#183;
-617
-&#183;
-3</div></div></header><div class=article-entry itemprop=articleBody><p>Auto-correction/spell checking is probably one of the most used functionalities over the web.
-Has anyone thought how it is working?? How blogs, websites, that run clearly over the web, are able to serve the list nearly instantly??
-I was really curious the other day and I wanted to spend some minutes crafting a small algori thm to study the functionality.
-I&rsquo;ve googled a bit arround for dictionaries and I&rsquo;ve found (this one).</p><p class=article-more-link><a href=https://agounaris.github.io/2014/02/12/php-auto-correction/spell-check-speed-testing/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2014/02/12/php-auto-correction/spell-check-speed-testing/ data-id=d6a3358bab1dc2a0f60c0ca5f3c56fb9 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2014/02/08/first-scala-tutorial-with-tests/><h1 class=article-title itemprop=name>First Scala tutorial with tests</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2014-02-08 02:13:50 +0000 UTC" itemprop=datePublished>2014-02-08</time>
-&#183;
-141
-&#183;
-1</div></div></header><div class=article-entry itemprop=articleBody><p>Hello all,
-Well, this is my first video ever and I made some language mistakes and probably the flow could have been better. This was a &ldquo;one try&rdquo; video and I&rsquo;ve left it like this to remind me of things that I should take care for the next one.
-So&mldr;.
-A while ago when I started learning scala it would have been really helpfull for me to have a small tutorial to introduce me to the initial process of how to create a scala project.</p><p class=article-more-link><a href=https://agounaris.github.io/2014/02/08/first-scala-tutorial-with-tests/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2014/02/08/first-scala-tutorial-with-tests/ data-id=0215da398b1876c33d8900005363c401 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2014/01/20/chrome-dns-tools/><h1 class=article-title itemprop=name>Chrome dns tools</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2014-01-20 02:13:50 +0000 UTC" itemprop=datePublished>2014-01-20</time>
-&#183;
-88
-&#183;
-1</div></div></header><div class=article-entry itemprop=articleBody><p>So looking around to improve my knowledge on how DNS works I fell into a &ldquo;well hidden&rdquo; chrome functionality that looks really cool!!
-Chrome tries to resolve urls while the user types (DNS Prefetching) and it has an internal functionality to analyze all the relevant events.
-Try to type in the address bar
-chrome://net-internals/#dns A couple of screen shots of two tools included in the functionality&mldr;
-Timeline of events</p><p class=article-more-link><a href=https://agounaris.github.io/2014/01/20/chrome-dns-tools/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2014/01/20/chrome-dns-tools/ data-id=0db073285e065dd7320496c0a851d934 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2014/01/11/playing-with-the-youtube-api/><h1 class=article-title itemprop=name>Playing with the youtube api</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2014-01-11 02:13:50 +0000 UTC" itemprop=datePublished>2014-01-11</time>
-&#183;
-180
-&#183;
-1</div></div></header><div class=article-entry itemprop=articleBody><p>Recently I&rsquo;ve been asked how easy it will be to get the initial screenshot of a youtube video attached in an email template with as less pain as possible.
-A bit of googling told me that you can get all public information of a video using the following endpoing
-https://gdata.youtube.com/feeds/api/videos/videoid?v=2 By using one of my favourite songs&mldr;
-http://www.youtube.com/watch?v=OguPPZ_7u60 The request becomes&mldr;
-https://gdata.youtube.com/feeds/api/videos/OguPPZ_7u60?v=2 Just to test a bit whats going on I&rsquo;ve tested the url with</p><p class=article-more-link><a href=https://agounaris.github.io/2014/01/11/playing-with-the-youtube-api/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2014/01/11/playing-with-the-youtube-api/ data-id=fdba2ac13ec602e8f851155ba551657d class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><article class="article article-type-post" itemscope itemprop=blogPost><div class=article-inner></a><header class=article-header><a href=https://agounaris.github.io/2013/12/22/extending-array_intersect-to-support-multidimensional-arrays/><h1 class=article-title itemprop=name>Extending array_intersect to support multidimensional arrays</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2013-12-22 02:13:50 +0000 UTC" itemprop=datePublished>2013-12-22</time>
-&#183;
-490
-&#183;
-3</div></div></header><div class=article-entry itemprop=articleBody><p>Recently I fell into a quite interesting problem.
-Imagine that you want to send a mass email. You have two different set of arrays. One is your mailing list and the second is your filter email list. The final recipients will be the array_intersect of those 2 arrays. So far so good&mldr;
-But what if the elements of the first array are also arrays? And what if you have stored values seperated by semicolon or any other character?</p><p class=article-more-link><a href=https://agounaris.github.io/2013/12/22/extending-array_intersect-to-support-multidimensional-arrays/></a></p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2013/12/22/extending-array_intersect-to-support-multidimensional-arrays/ data-id=5a9cea1db5a4989fb44c714463cb2b16 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div></article><nav id=page-nav><a class="extend next" rel=next href=https://agounaris.github.io/page/2/>»</a></nav></section><aside id=sidebar><div class=widget-wrap><h3 class=widget-title></h3><div class=widget><ul id=recent-post><li><div class=item-thumbnail><a href=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/ class=title>Stock symbol time series analysis and prediction with ARIMA model</a></p><p class=item-date><time datetime="2017-05-01 12:00:50 +0000 UTC" itemprop=datePublished>2017-05-01</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/page/projects/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/page/projects/ class=title>Projects</a></p><p class=item-date><time datetime="2015-04-03 02:13:50 +0000 UTC" itemprop=datePublished>2015-04-03</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/page/contact/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/page/contact/ class=title>Contact</a></p><p class=item-date><time datetime="2015-04-03 02:13:50 +0000 UTC" itemprop=datePublished>2015-04-03</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/page/about/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/page/about/ class=title>About</a></p><p class=item-date><time datetime="2015-04-03 02:13:50 +0000 UTC" itemprop=datePublished>2015-04-03</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/ class=title>One year developing with Elasticsearch</a></p><p class=item-date><time datetime="2015-02-28 02:13:50 +0000 UTC" itemprop=datePublished>2015-02-28</time></p></div></li></ul></div></div><div class=widget-wrap><h3 class=widget-title></h3><div class=widget><ul class=category-list><li class=category-list-item><a class=category-list-link href=https://agounaris.github.io/tags/php>php</a>
-<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://agounaris.github.io/tags/python>python</a>
-<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://agounaris.github.io/tags/symfony>symfony</a>
-<span class=category-list-count>1</span></li></ul></div></div><div class=widget-wrap><h3 class=widget-title></h3><div class="widget tagcloud"><a href=https://agounaris.github.io/tags/php style=font-size:12px>php</a>
-<a href=https://agounaris.github.io/tags/python style=font-size:12px>python</a>
-<a href=https://agounaris.github.io/tags/symfony style=font-size:12px>symfony</a></div></div><div id=toTop class="fa fa-angle-up"></div></aside></div></div><footer id=footer><div class=outer><div id=footer-info class=inner>&copy; 2021
-Powered by <a href=//gohugo.io>Hugo</a>. Theme by <a href=https://github.com/ppoffice>PPOffice</a>.</div></div></footer><script src=https://agounaris.github.io/fancybox/jquery.fancybox.pack.js></script><script src=https://agounaris.github.io/js/script.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js></script><script>hljs.initHighlightingOnLoad()</script><script type=text/x-mathjax-config>
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Argy&#39;s Corner</title>
+
+<meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+<meta name="author" content="Theme PaperMod">
+<link rel="canonical" href="/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.65aebb33e4f0ce3d1a39e4a35c11b91eb08b582489fca0f78f9227d90ac72a52.css" integrity="sha256-Za67M&#43;Twzj0aOeSjXBG5HrCLWCSJ/KD3j5In2QrHKlI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.82.1" />
+<link rel="alternate" type="application/rss&#43;xml" href="/index.xml">
+<link rel="alternate" type="application/json" href="/index.json">
+<link rel="alternate" hreflang="en" href="/" />
+<link rel="alternate" hreflang="gr" href="/gr/" />
+<meta property="og:title" content="Argy&#39;s Corner" />
+<meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" /><meta property="og:image" content="/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Argy&#39;s Corner"/>
+<meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Argy's Corner",
+  "url": "/",
+  "description": "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod",
+  "thumbnailUrl": "/favicon.ico",
+  "sameAs": [
+      "https://github.com/adityatelange/hugo-PaperMod", "https://ko-fi.com/adityatelange", "index.xml"
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Argy&#39;s Corner (Alt + H)">Argy&#39;s Corner</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="/gr/" title="Ελληνικά"
+                            aria-label="Ελληνικά">Ελληνικά</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>PaperMod</h1>
+    </header>
+    <section class="entry-content">
+        <p><p>Welcome to demo of hugo&rsquo;s theme PaperMod.</p>
+<ul>
+<li><strong>PaperMod</strong> is a simple but fast and responsive theme with useful feature-set that enhances UX.</li>
+<li>Do give a 🌟 on Github !</li>
+<li>PaperMod is based on theme <a href="https://github.com/nanxiaobei/hugo-paper">Paper</a>.</li>
+</ul>
+</p>
+    </section>
+    <footer class="entry-footer">
+        <div class="social-icons">
+    <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://ko-fi.com/adityatelange" target="_blank" rel="noopener noreferrer me" title="Ko fi">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
+    viewBox="0 -3 23 27" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+    stroke-linejoin="round">
+    <path
+        d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734c4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09c-.443-.441-3.368-3.049-4.034-3.954c-.709-.965-1.041-2.7-.091-3.71c.951-1.01 3.005-1.086 4.363.407c0 0 1.565-1.782 3.468-.963c1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z" />
+</svg>
+    </a>
+    <a href="index.xml" target="_blank" rel="noopener noreferrer me" title="Rs s">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Stock symbol time series analysis and prediction with ARIMA model</h2>
+  </header>
+  <section class="entry-content">
+    <p>This project examines the predictive capabilities of the ARIMA model for time series analysis. To explore the capabilities of the statsmodels library, the Python programming language will be used with jupyter notebook being the runtime environment. Along with the prediction analysis, there will be a demonstration of data retrieval using the yahoo web api, time series transformation, manual and automatic stationarity checks, benchmarking the model versus a naive benchmark, multiple days prediction and multiple symbol prediction mean error checks....</p>
+  </section>
+  <footer class="entry-footer">May 1, 2017&nbsp;·&nbsp;14 min&nbsp;·&nbsp;Argyrios Gounaris</footer>
+  <a class="entry-link" aria-label="post link to Stock symbol time series analysis and prediction with ARIMA model" href="/2017/05/01/2017-05-01-stock-symbol-time-series-analysis-and-prediction-with-arima-model/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Asynchronous tasks with python3 concurrent futures</h2>
+  </header>
+  <section class="entry-content">
+    <p>Today Greece is again all over the news because of the Eurogroup and the new deal the Greek governemnt tries to achieve through its representatives. Why not check out which website has a title about Greece on it’s front page as fast as possible.
+Python 3.2 introduced concurrent futures which is actually a simple interface for asynchronous parallel tasks. Lets check it out on a very simple example.
+We will crawl 5 web sites, some of them will not contain English characters and I selected them just to check the difference....</p>
+  </section>
+  <footer class="entry-footer">February 28, 2015&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Argyrios Gounaris</footer>
+  <a class="entry-link" aria-label="post link to Asynchronous tasks with python3 concurrent futures" href="/2015/02/28/2015-02-16-asynchronous-python3-parallel-tasks/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>One year developing with Elasticsearch</h2>
+  </header>
+  <section class="entry-content">
+    <p>After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution....</p>
+  </section>
+  <footer class="entry-footer">February 28, 2015&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Argyrios Gounaris</footer>
+  <a class="entry-link" aria-label="post link to One year developing with Elasticsearch" href="/2015/02/28/2015-02-28-1-year-developing-with-es/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Migrate legacy md5 passwords to sha on symfony and fos user bundle</h2>
+  </header>
+  <section class="entry-content">
+    <p>Recently I came upon a problem where the passwords of the current user base are hashed in md5 and we had to migrate them to sha. Checking around the web how others have solved this didn’t help a lot. Asking your user to login to change the password or double encode the md5 one didn’t sound like clever solutions.
+The main authentication process in symfony is happening in DaoAuthenticationProvider.
+{% highlight php startinline=true %} if (!...</p>
+  </section>
+  <footer class="entry-footer">February 2, 2015&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Argyrios Gounaris</footer>
+  <a class="entry-link" aria-label="post link to Migrate legacy md5 passwords to sha on symfony and fos user bundle" href="/2015/02/02/2015-02-02-legacy-md5-password-migration-symfony/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Play framework, it looks awesome!</h2>
+  </header>
+  <section class="entry-content">
+    <p>Lately I find myself in a position where I’m not sure what I want to learn next and what will be usefull for me career wise. This weekend I wanted to check out the play framework. A scala framework which supports coding in both scala and java.
+I used to work with java for many year but I wanted something else since I wasn’t enjoying the ecosystem. I will not get into details on that, java is great as language but there are a lot of applications out there which is nightmare to work with…...</p>
+  </section>
+  <footer class="entry-footer">January 18, 2015&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Argyrios Gounaris</footer>
+  <a class="entry-link" aria-label="post link to Play framework, it looks awesome!" href="/2015/01/18/2015-01-18-play-framework/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="/page/2/">Next Page »</a>
+  </nav>
+</footer>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="/">Argy&#39;s Corner</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

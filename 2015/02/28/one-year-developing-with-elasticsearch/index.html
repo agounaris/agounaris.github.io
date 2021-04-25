@@ -1,29 +1,615 @@
-<!doctype html><html lang=en-us><head><title>One year developing with Elasticsearch &#183; Argys Corner</title><meta name=generator content="Hugo 0.82.1"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta name=author content="Argyrios Gounaris"><meta name=description content><link rel=canonical href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/><link rel=icon href=https://agounaris.github.io/favicon.ico><link rel=apple-touch-icon href=https://agounaris.github.io/apple-touch-icon.png><link rel=stylesheet href=https://agounaris.github.io/css/style.css><link rel=stylesheet href=https://agounaris.github.io/css/font-awesome.min.css><link rel=stylesheet href=https://agounaris.github.io/css/monokai.css><link rel=stylesheet href=https://agounaris.github.io/fancybox/jquery.fancybox.css><link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel=stylesheet type=text/css><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel=stylesheet type=text/css><meta property="og:title" content="One year developing with Elasticsearch"><meta property="og:description" content="After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution."><meta property="og:type" content="article"><meta property="og:url" content="https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/"><meta property="article:section" content="post"><meta property="article:published_time" content="2015-02-28T02:13:50+00:00"><meta property="article:modified_time" content="2015-02-28T02:13:50+00:00"><meta itemprop=name content="One year developing with Elasticsearch"><meta itemprop=description content="After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution."><meta itemprop=datePublished content="2015-02-28T02:13:50+00:00"><meta itemprop=dateModified content="2015-02-28T02:13:50+00:00"><meta itemprop=wordCount content="1056"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="One year developing with Elasticsearch"><meta name=twitter:description content="After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution."><meta name=twitter:site content="@gohugoio"><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js></script></head><body><div class=container><div id=container><header id=header><div id=header-main class=header-inner><div class=outer><a href=https://agounaris.github.io/ id=logo><i class=logo style=background-image:url(https://agounaris.github.io/css/images/logo.png)></i>
-<span class=site-title>Argys Corner</span></a><nav id=main-nav><a class=main-nav-link href=https://agounaris.github.io/>Home</a>
-<a class=main-nav-link href=https://agounaris.github.io/tags/>Tags</a>
-<a class=main-nav-link href=https://agounaris.github.io/categories/>Categories</a></nav><nav id=sub-nav><div class=profile id=profile-nav><a id=profile-anchor href=javascript:;><img class=avatar src=https://agounaris.github.io/css/images/avatar.png><i class="fa fa-caret-down"></i></a></div></nav><div id=search-form-wrap><form action=//google.com/search method=get accept-charset=utf-8 class=search-form><input type=search name=q class=search-form-input placeholder>
-<button type=submit class=search-form-submit></button>
-<input type=hidden name=sitesearch value=https://agounaris.github.io/></form></div></div></div><div id=main-nav-mobile class="header-sub header-inner"><table class="menu outer"><tbody><tr><td><a class=main-nav-link href=https://agounaris.github.io/>Home</a></td><td><a class=main-nav-link href=https://agounaris.github.io/tags/>Tags</a></td><td><a class=main-nav-link href=https://agounaris.github.io/categories/>Categories</a></td><td><form action=//google.com/search method=get accept-charset=utf-8 class=search-form><input type=search name=q class=search-form-input placeholder=Search>
-<input type=hidden name=sitesearch value=https://agounaris.github.io/></form></td></tr></tbody></table></div></header><div class=outer><aside id=profile><div class="inner profile-inner"><div class="base-info profile-block"><img id=avatar src="https://www.gravatar.com/avatar/4fca794da0cf08804f99048d3c8b39c1?s=100&d=identicon"><h2 id=name>Argyrios Gounaris</h2><h3 id=title>Blogger - Programmer - Gopher</h3><span id=location><i class="fa fa-map-marker"></i>Earth</span>
-<a id=follow href=https://github.com/gohugoio></a></div><div class="article-info profile-block"><div class=article-info-block>18
-<span></span></div><div class=article-info-block>3
-<span></span></div></div><div class="profile-block social-links"><table><tr><td><a href=//github.com/gohugoio target=_blank title=GitHub><i class="fa fa-github"></i></a></td><td><a href=//twitter.com/gohugoio target=_blank title=Twitter><i class="fa fa-twitter"></i></a></td><td><a href=https://agounaris.github.io/index.xml target=_blank title=RSS><i class="fa fa-rss"></i></a></td></tr></table></div></div></aside><section id=main><article id=page-undefined class="article article-type-page" itemscope itemprop=blogPost><div class=article-inner><header class=article-header><a href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/><h1 class=article-title itemprop=name>One year developing with Elasticsearch</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i>
-<time datetime="2015-02-28 02:13:50 +0000 UTC" itemprop=datePublished>2015-02-28</time>
-&#183;
-1056
-&#183;
-5</div></div></header><div class=article-entry itemprop=articleBody><p>After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was <a href=https://github.com/Sylius/Sylius/pull/1784>contributed back to sylius</a>, the “base” for our solution.</p><p>First things first, why elasticsearch compared to other search engines?</p><p>What I loved in elasticsearch is that it’s “modern”. For me the rest api it exposes it’s just the way I though a search engine for a web app will be and elasticsearch is a cluster by default compared to other search engines. Also it can work as a document database or caching layer but my approach towards caching is that you must be available at any given time to rebuild it so I wouldn’t like to use it for persistence.</p><p>Elasticsearch is massive!! And it changes fast! Documentation is good enough but I would like a bit more details on day-to-day tasks. What confused me initially was the fact that all the examples provided in the documentation must be wrapped in a “query” clause.</p><h3 id=setting-up-es>Setting up ES:</h3><p>Starting with elasticsearch is really easy. I prefer downloading the zip containing the executables and if you have mac I like homebrew. When we started with es I wanted to automate the setup of a simple cluster and I choose vagrant with puppet for this. The first version was just setting up a 2 nodes cluster in VMs just for the development. Later on I’ve build a more generic environment using the latest practices.</p><h3 id=libraries>Libraries:</h3><p>Our application is a symfony one. That said I just started using the FosElasticaBundle which is a wrapper for the elastica library. What it provides you is yml configuration for your indexes and mechanisms like update/delete/insert listeners for your indexed data.</p><p>FosElastica work amazingly if you have a small application or a model that is not so complicated. When I say complicated I mostly mean relations between objects. Our application is an e-commerce one and our model is quite challenging to index. I started with the default settings and soon enough I realised that the level of nested objects will do the querying quite complicated. By using a mechanism called property accessor I took the decision to get all what I need on the indexing time and save them in a single indexing level were attributes will be either scalar or arrays. This helped me to keep the query code really simple and straightforward. But this didn’t end there….</p><p>Now imagine an object which has options and attributes…By using listeners when an option changes you have to go and search for all the objects which includes it
-and re-index them. Think that maybe you have 3 or 4 options changing all the time. Suddenly indexing with listeners becomes totally inefficient. This is where we decided to drop FosElastica for our app and use just the elastica lib for quering ES and build our own custom indexer. One thing that makes indexing a bit slow it’s also the ORM. Doctrine in this case. We dumped that as well. After some series of refactoring and optimisations and by using raw mysql queries we managed to index the whole catalog for multiple regions in under 9 seconds. We accepted that the indexer will not have fresh data at any given time but we managed to do the re-indexing so fast that will be hardly noticeable by the end user. Not mention that we always go to the database when it comes to add something to the cart.</p><h3 id=workflow>Workflow:</h3><p>I always have a rest client open to have direct access to the indexed data. I tried out several chrome plugins including postman but I ended up using the HEAD plugin of the elasticsearch itself. It really has everything you need to execute queries and check the status of your indexes.</p><p>I started developing the app trying to query data from the elastica library itself. This proven to be slightly wrong…elastica is a nice object oriented library around creating arrays that afterwards are json-encoded before the query. This interface can be confusing to someone which is not able to compile a complicated query properly, like I was 1 year ago. What I like doing now it to start always with the raw json query, after I get the result I want it’s dead obvious how to transfer the query to the library.</p><p>A must for an e-commerce application is the faceted result set. Or in elasticsearch terms the aggregations. I was developing the app using the facets and it was that time when ES took the decision to deprecate facets for the favour of aggregations. Is was not a massive change to do in the code but it added a level of frustration, since you want to deliver something in time. A small issue also occurred with the default behaviour of setFilter which now points to setPostFilter and affects the counts of the aggregations. Again I had to adapt my code for this change since I wanted the aggregations to be applied to the unfiltered result set but now ES is doing this for me.</p><h3 id=usage>Usage:</h3><p>We use elasticsearch for search, app logging and analytics. For search we index our catalog, store infos, web content etc and there is a smart mechanism to filter those different result sets and load separate views and represent them on the same result set. We have an ObjectPresentationHandler which abstract a bit the way things are shown on the gui.</p><p>For app logging we use monolog and we post data through channels mostly for payments and internal app procedures. MonologBundle initially was not supporting ES engine and because we needed it <a href=https://github.com/symfony/MonologBundle/pull/108>I’ve contributed it back to the bundle.</a></p><p>For analytics the idea is to throw in ES all the raw data within a specific date range and use kibana afterwards to extract useful information. We use it mostly for sales analytics, order states etc.</p><p>Elasticsearch is a great tool, easy to setup with good documentation that fits really well in a lot of use cases!!</p><p>Cheers,
-Argyris</p></div><footer class=article-footer><a data-url=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/ data-id=c4119021870bd3338550b5f0ab6587e7 class=article-share-link><i class="fa fa-share"></i></a>
-<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div><nav id=article-nav><a href=https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/ id=article-nav-older class=article-nav-link-wrap><strong class=article-nav-caption></strong><div class=article-nav-title>Play framework, it looks awesome!</div></a><a href=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/ id=article-nav-newer class=article-nav-link-wrap><strong class=article-nav-caption></strong><div class=article-nav-title>Stock symbol time series analysis and prediction with ARIMA model</div></a></nav></article></section><aside id=sidebar><div class=widget-wrap><h3 class=widget-title></h3><div class=widget><ul id=recent-post><li><div class=item-thumbnail><a href=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/ class=title>Stock symbol time series analysis and prediction with ARIMA model</a></p><p class=item-date><time datetime="2017-05-01 12:00:50 +0000 UTC" itemprop=datePublished>2017-05-01</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/page/projects/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/page/projects/ class=title>Projects</a></p><p class=item-date><time datetime="2015-04-03 02:13:50 +0000 UTC" itemprop=datePublished>2015-04-03</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/page/contact/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/page/contact/ class=title>Contact</a></p><p class=item-date><time datetime="2015-04-03 02:13:50 +0000 UTC" itemprop=datePublished>2015-04-03</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/page/about/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/page/about/ class=title>About</a></p><p class=item-date><time datetime="2015-04-03 02:13:50 +0000 UTC" itemprop=datePublished>2015-04-03</time></p></div></li><li><div class=item-thumbnail><a href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/ class=thumbnail><span class="thumbnail-image thumbnail-none"></span></a></div><div class=item-inner><p class=item-title><a href=https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/ class=title>One year developing with Elasticsearch</a></p><p class=item-date><time datetime="2015-02-28 02:13:50 +0000 UTC" itemprop=datePublished>2015-02-28</time></p></div></li></ul></div></div><div class=widget-wrap><h3 class=widget-title></h3><div class=widget><ul class=category-list><li class=category-list-item><a class=category-list-link href=https://agounaris.github.io/tags/php>php</a>
-<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://agounaris.github.io/tags/python>python</a>
-<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://agounaris.github.io/tags/symfony>symfony</a>
-<span class=category-list-count>1</span></li></ul></div></div><div class=widget-wrap><h3 class=widget-title></h3><div class="widget tagcloud"><a href=https://agounaris.github.io/tags/php style=font-size:12px>php</a>
-<a href=https://agounaris.github.io/tags/python style=font-size:12px>python</a>
-<a href=https://agounaris.github.io/tags/symfony style=font-size:12px>symfony</a></div></div><div id=toTop class="fa fa-angle-up"></div></aside></div></div><footer id=footer><div class=outer><div id=footer-info class=inner>&copy; 2021
-Powered by <a href=//gohugo.io>Hugo</a>. Theme by <a href=https://github.com/ppoffice>PPOffice</a>.</div></div></footer><script src=https://agounaris.github.io/fancybox/jquery.fancybox.pack.js></script><script src=https://agounaris.github.io/js/script.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js></script><script>hljs.initHighlightingOnLoad()</script><script type=text/x-mathjax-config>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>One year developing with Elasticsearch &middot; Argys Corner</title>
+    <meta name="generator" content="Hugo 0.75.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Argyrios Gounaris">
+    
+      <meta name="description" content="">
+    
+    
+    <link rel="canonical" href="https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/"/>
+    <link rel="icon" href="https://agounaris.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="https://agounaris.github.io/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://agounaris.github.io/css/style.css">
+    <link rel="stylesheet" href="https://agounaris.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://agounaris.github.io/css/monokai.css">
+    <link rel="stylesheet" href="https://agounaris.github.io/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="One year developing with Elasticsearch" />
+<meta property="og:description" content="After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/" />
+<meta property="article:published_time" content="2015-02-28T02:13:50+00:00" />
+<meta property="article:modified_time" content="2015-02-28T02:13:50+00:00" />
+
+    
+    <meta itemprop="name" content="One year developing with Elasticsearch">
+<meta itemprop="description" content="After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution.">
+<meta itemprop="datePublished" content="2015-02-28T02:13:50+00:00" />
+<meta itemprop="dateModified" content="2015-02-28T02:13:50+00:00" />
+<meta itemprop="wordCount" content="1056">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="One year developing with Elasticsearch"/>
+<meta name="twitter:description" content="After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution."/>
+<meta name="twitter:site" content="@gohugoio"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://agounaris.github.io/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://agounaris.github.io/css/images/logo.png')"></i>
+          
+          <span class="site-title">Argys Corner</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://agounaris.github.io/">Home</a>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://agounaris.github.io/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://agounaris.github.io/categories/">Categories</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://agounaris.github.io/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://agounaris.github.io/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://agounaris.github.io/">Home</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://agounaris.github.io/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://agounaris.github.io/categories/">Categories</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://agounaris.github.io/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://www.gravatar.com/avatar/4fca794da0cf08804f99048d3c8b39c1?s=100&d=identicon"/>
+      
+      <h2 id="name">Argyrios Gounaris</h2>
+      <h3 id="title">Blogger - Programmer - Gopher</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/gohugoio">
+              
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        19
+        <span></span>
+      </div>
+      <div class="article-info-block">
+        
+          3
+        
+        <span>
+            
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/gohugoio" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/gohugoio" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://agounaris.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/">
+    <h1 class="article-title" itemprop="name">
+        One year developing with Elasticsearch
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-02-28 02:13:50 &#43;0000 UTC" itemprop="datePublished">2015-02-28</time>
+            &middot;
+            1056
+            
+            &middot;
+            5
+            
+        </div>
+        
+        
+
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was <a href="https://github.com/Sylius/Sylius/pull/1784">contributed back to sylius</a>, the “base” for our solution.</p>
+<p>First things first, why elasticsearch compared to other search engines?</p>
+<p>What I loved in elasticsearch is that it’s “modern”. For me the rest api it exposes it’s just the way I though a search engine for a web app will be and elasticsearch is a cluster by default compared to other search engines. Also it can work as a document database or caching layer but my approach towards caching is that you must be available at any given time to rebuild it so I wouldn’t like to use it for persistence.</p>
+<p>Elasticsearch is massive!! And it changes fast! Documentation is good enough but I would like a bit more details on day-to-day tasks. What confused me initially was the fact that all the examples provided in the documentation must be wrapped in a “query” clause.</p>
+<h3 id="setting-up-es">Setting up ES:</h3>
+<p>Starting with elasticsearch is really easy. I prefer downloading the zip containing the executables and if you have mac I like homebrew. When we started with es I wanted to automate the setup of a simple cluster and I choose vagrant with puppet for this. The first version was just setting up a 2 nodes cluster in VMs just for the development. Later on I’ve build a more generic environment using the latest practices.</p>
+<h3 id="libraries">Libraries:</h3>
+<p>Our application is a symfony one. That said I just started using the FosElasticaBundle which is a wrapper for the elastica library. What it provides you is yml configuration for your indexes and mechanisms like update/delete/insert listeners for your indexed data.</p>
+<p>FosElastica work amazingly if you have a small application or a model that is not so complicated. When I say complicated I mostly mean relations between objects. Our application is an e-commerce one and our model is quite challenging to index. I started with the default settings and soon enough I realised that the level of nested objects will do the querying quite complicated. By using a mechanism called property accessor I took the decision to get all what I need on the indexing time and save them in a single indexing level were attributes will be either scalar or arrays. This helped me to keep the query code really simple and straightforward. But this didn’t end there….</p>
+<p>Now imagine an object which has options and attributes…By using listeners when an option changes you have to go and search for all the objects which includes it
+and re-index them. Think that maybe you have 3 or 4 options changing all the time. Suddenly indexing with listeners becomes totally inefficient. This is where we decided to drop FosElastica for our app and use just the elastica lib for quering ES and build our own custom indexer. One thing that makes indexing a bit slow it’s also the ORM. Doctrine in this case. We dumped that as well. After some series of refactoring and optimisations and by using raw mysql queries we managed to index the whole catalog for multiple regions in under 9 seconds. We accepted that the indexer will not have fresh data at any given time but we managed to do the re-indexing so fast that will be hardly noticeable by the end user. Not mention that we always go to the database when it comes to add something to the cart.</p>
+<h3 id="workflow">Workflow:</h3>
+<p>I always have a rest client open to have direct access to the indexed data. I tried out several chrome plugins including postman but I ended up using the HEAD plugin of the elasticsearch itself. It really has everything you need to execute queries and check the status of your indexes.</p>
+<p>I started developing the app trying to query data from the elastica library itself. This proven to be slightly wrong…elastica is a nice object oriented library around creating arrays that afterwards are json-encoded before the query. This interface can be confusing to someone which is not able to compile a complicated query properly, like I was 1 year ago. What I like doing now it to start always with the raw json query, after I get the result I want it’s dead obvious how to transfer the query to the library.</p>
+<p>A must for an e-commerce application is the faceted result set. Or in elasticsearch terms the aggregations. I was developing the app using the facets and it was that time when ES took the decision to deprecate facets for the favour of aggregations. Is was not a massive change to do in the code but it added a level of frustration, since you want to deliver something in time. A small issue also occurred with the default behaviour of setFilter which now points to setPostFilter and affects the counts of the aggregations. Again I had to adapt my code for this change since I wanted the aggregations to be applied to the unfiltered result set but now ES is doing this for me.</p>
+<h3 id="usage">Usage:</h3>
+<p>We use elasticsearch for search, app logging and analytics. For search we index our catalog, store infos, web content etc and there is a smart mechanism to filter those different result sets and load separate views and represent them on the same result set. We have an ObjectPresentationHandler which abstract a bit the way things are shown on the gui.</p>
+<p>For app logging we use monolog and we post data through channels mostly for payments and internal app procedures. MonologBundle initially was not supporting ES engine and because we needed it <a href="https://github.com/symfony/MonologBundle/pull/108">I’ve contributed it back to the bundle.</a></p>
+<p>For analytics the idea is to throw in ES all the raw data within a specific date range and use kibana afterwards to extract useful information. We use it mostly for sales analytics, order states etc.</p>
+<p>Elasticsearch is a great tool, easy to setup with good documentation that fits really well in a lot of use cases!!</p>
+<p>Cheers,
+Argyris</p>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/" data-id="c4119021870bd3338550b5f0ab6587e7" class="article-share-link">
+        <i class="fa fa-share"></i>
+        
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          
+      </strong>
+      <div class="article-nav-title">Play framework, it looks awesome!</div>
+    </a>
+    
+
+    
+    <a href="https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          
+      </strong>
+      <div class="article-nav-title">Stock symbol time series analysis and prediction with ARIMA model</div>
+    </a>
+    
+</nav>
+
+
+</article>
+
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+      <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/" class="title">Stock symbol time series analysis and prediction with ARIMA model</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-01 12:00:50 &#43;0000 UTC" itemprop="datePublished">2017-05-01</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://agounaris.github.io/page/projects/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="https://agounaris.github.io/page/projects/" class="title">Projects</a></p>
+                    <p class="item-date">
+                        <time datetime="2015-04-03 02:13:50 &#43;0000 UTC" itemprop="datePublished">2015-04-03</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://agounaris.github.io/page/contact/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="https://agounaris.github.io/page/contact/" class="title">Contact</a></p>
+                    <p class="item-date">
+                        <time datetime="2015-04-03 02:13:50 &#43;0000 UTC" itemprop="datePublished">2015-04-03</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://agounaris.github.io/page/about/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="https://agounaris.github.io/page/about/" class="title">About</a></p>
+                    <p class="item-date">
+                        <time datetime="2015-04-03 02:13:50 &#43;0000 UTC" itemprop="datePublished">2015-04-03</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/" class="title">One year developing with Elasticsearch</a></p>
+                    <p class="item-date">
+                        <time datetime="2015-02-28 02:13:50 &#43;0000 UTC" itemprop="datePublished">2015-02-28</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://agounaris.github.io/tags/php">
+                    php
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://agounaris.github.io/tags/python">
+                    python
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://agounaris.github.io/tags/symfony">
+                    symfony
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://agounaris.github.io/tags/php" style="font-size: 12px;">php</a>
+        
+        
+        <a href="https://agounaris.github.io/tags/python" style="font-size: 12px;">python</a>
+        
+        
+        <a href="https://agounaris.github.io/tags/symfony" style="font-size: 12px;">symfony</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="https://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://agounaris.github.io/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://agounaris.github.io/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
     inlineMath: [['$','$'], ['\\(','\\)']]}
   });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
