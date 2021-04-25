@@ -1,30 +1,184 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Argys Corner</title><link>https://agounaris.github.io/post/</link><description>Recent content in Posts on Argys Corner</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 May 2017 12:00:50 +0000</lastBuildDate><atom:link href="https://agounaris.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Stock symbol time series analysis and prediction with ARIMA model</title><link>https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/</link><pubDate>Mon, 01 May 2017 12:00:50 +0000</pubDate><guid>https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/</guid><description>This project examines the predictive capabilities of the ARIMA model for time series analysis. To explore the capabilities of the statsmodels library, the Python programming language will be used with jupyter notebook being the runtime environment. Along with the prediction analysis, there will be a demonstration of data retrieval using the yahoo web api, time series transformation, manual and automatic stationarity checks, benchmarking the model versus a naive benchmark, multiple days prediction and multiple symbol prediction mean error checks.</description></item><item><title>One year developing with Elasticsearch</title><link>https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/</link><pubDate>Sat, 28 Feb 2015 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/</guid><description>After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution.</description></item><item><title>Play framework, it looks awesome!</title><link>https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/</link><pubDate>Sun, 18 Jan 2015 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/</guid><description>Lately I find myself in a position where I&amp;rsquo;m not sure what I want to learn next and what will be usefull for me career wise. This weekend I wanted to check out the play framework. A scala framework which supports coding in both scala and java.
-I used to work with java for many year but I wanted something else since I wasn&amp;rsquo;t enjoying the ecosystem. I will not get into details on that, java is great as language but there are a lot of applications out there which is nightmare to work with&amp;hellip;</description></item><item><title>More than one programming language</title><link>https://agounaris.github.io/2014/10/05/more-than-one-programming-language/</link><pubDate>Sun, 05 Oct 2014 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2014/10/05/more-than-one-programming-language/</guid><description>Why do we have so many programming languages?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Argys Corner</title>
+    <link>https://agounaris.github.io/post/</link>
+    <description>Recent content in Posts on Argys Corner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 May 2017 12:00:50 +0000</lastBuildDate><atom:link href="https://agounaris.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stock symbol time series analysis and prediction with ARIMA model</title>
+      <link>https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/</link>
+      <pubDate>Mon, 01 May 2017 12:00:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2017/05/01/stock-symbol-time-series-analysis-and-prediction-with-arima-model/</guid>
+      <description>This project examines the predictive capabilities of the ARIMA model for time series analysis. To explore the capabilities of the statsmodels library, the Python programming language will be used with jupyter notebook being the runtime environment. Along with the prediction analysis, there will be a demonstration of data retrieval using the yahoo web api, time series transformation, manual and automatic stationarity checks, benchmarking the model versus a naive benchmark, multiple days prediction and multiple symbol prediction mean error checks.</description>
+    </item>
+    
+    <item>
+      <title>One year developing with Elasticsearch</title>
+      <link>https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/</link>
+      <pubDate>Sat, 28 Feb 2015 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2015/02/28/one-year-developing-with-elasticsearch/</guid>
+      <description>After a year working with elasticsearch I decided to write about it mainly as a self reminder of what I liked what I did not and the choices I made in the process. Everything is a personal opinion and someone might choose to disagree but it’s cool :) . All this experience was a part of creating a search implementation for an e-commerce application which in the process along with a mysql full text search was contributed back to sylius, the “base” for our solution.</description>
+    </item>
+    
+    <item>
+      <title>Play framework, it looks awesome!</title>
+      <link>https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/</link>
+      <pubDate>Sun, 18 Jan 2015 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2015/01/18/play-framework-it-looks-awesome/</guid>
+      <description>Lately I find myself in a position where I&amp;rsquo;m not sure what I want to learn next and what will be usefull for me career wise. This weekend I wanted to check out the play framework. A scala framework which supports coding in both scala and java.
+I used to work with java for many year but I wanted something else since I wasn&amp;rsquo;t enjoying the ecosystem. I will not get into details on that, java is great as language but there are a lot of applications out there which is nightmare to work with&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>More than one programming language</title>
+      <link>https://agounaris.github.io/2014/10/05/more-than-one-programming-language/</link>
+      <pubDate>Sun, 05 Oct 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2014/10/05/more-than-one-programming-language/</guid>
+      <description>Why do we have so many programming languages?
 I don&amp;rsquo;t know about you but this is a question I&amp;rsquo;m asking myself constantly when I read about new technologies and methods. My opinion is that we have so many programming languages for two basic reasons.
-The first reason is kinda obvious and it&amp;rsquo;s called evolution. Our need to build more complex systems, our need to simplify common solutions, the software being available to more people has led us into creating new tools trying to solve those increasingly complicated problems.</description></item><item><title>A few thoughts on programming, and not only, ego...</title><link>https://agounaris.github.io/2014/10/01/a-few-thoughts-on-programming-and-not-only-ego.../</link><pubDate>Wed, 01 Oct 2014 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2014/10/01/a-few-thoughts-on-programming-and-not-only-ego.../</guid><description>A lot of people are talking about collaboration, programming disciplines, agile methodology &amp;hellip;etc as basic principles of a modern software development team. Well &amp;hellip; bullocks.
+The first reason is kinda obvious and it&amp;rsquo;s called evolution. Our need to build more complex systems, our need to simplify common solutions, the software being available to more people has led us into creating new tools trying to solve those increasingly complicated problems.</description>
+    </item>
+    
+    <item>
+      <title>A few thoughts on programming, and not only, ego...</title>
+      <link>https://agounaris.github.io/2014/10/01/a-few-thoughts-on-programming-and-not-only-ego.../</link>
+      <pubDate>Wed, 01 Oct 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2014/10/01/a-few-thoughts-on-programming-and-not-only-ego.../</guid>
+      <description>A lot of people are talking about collaboration, programming disciplines, agile methodology &amp;hellip;etc as basic principles of a modern software development team. Well &amp;hellip; bullocks.
 One of the basic things that can make a team wither or thrive is the amount of presence of programming ego. It&amp;rsquo;s our willingness to accept a different opinion as long as it&amp;rsquo;s owner presents valid arguments to support this opinion.
-How many times in your career haven&amp;rsquo;t you heard arguments like &amp;ldquo;just do it&amp;rdquo;, &amp;ldquo;he/she knows because he/she is good&amp;rdquo;, &amp;ldquo;it&amp;rsquo;s better because I have done it in the past&amp;rdquo; and lot more funny expressions.</description></item><item><title>PHP Auto correction/spell check, speed testing</title><link>https://agounaris.github.io/2014/02/12/php-auto-correction/spell-check-speed-testing/</link><pubDate>Wed, 12 Feb 2014 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2014/02/12/php-auto-correction/spell-check-speed-testing/</guid><description>Auto-correction/spell checking is probably one of the most used functionalities over the web.
+How many times in your career haven&amp;rsquo;t you heard arguments like &amp;ldquo;just do it&amp;rdquo;, &amp;ldquo;he/she knows because he/she is good&amp;rdquo;, &amp;ldquo;it&amp;rsquo;s better because I have done it in the past&amp;rdquo; and lot more funny expressions.</description>
+    </item>
+    
+    <item>
+      <title>PHP Auto correction/spell check, speed testing</title>
+      <link>https://agounaris.github.io/2014/02/12/php-auto-correction/spell-check-speed-testing/</link>
+      <pubDate>Wed, 12 Feb 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2014/02/12/php-auto-correction/spell-check-speed-testing/</guid>
+      <description>Auto-correction/spell checking is probably one of the most used functionalities over the web.
 Has anyone thought how it is working?? How blogs, websites, that run clearly over the web, are able to serve the list nearly instantly??
-I was really curious the other day and I wanted to spend some minutes crafting a small algori thm to study the functionality.
-I&amp;rsquo;ve googled a bit arround for dictionaries and I&amp;rsquo;ve found (this one).</description></item><item><title>First Scala tutorial with tests</title><link>https://agounaris.github.io/2014/02/08/first-scala-tutorial-with-tests/</link><pubDate>Sat, 08 Feb 2014 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2014/02/08/first-scala-tutorial-with-tests/</guid><description>Hello all,
+I was really curious the other day and I wanted to spend some minutes crafting a small algori	thm to study the functionality.
+I&amp;rsquo;ve googled a bit arround for dictionaries and I&amp;rsquo;ve found (this one).</description>
+    </item>
+    
+    <item>
+      <title>First Scala tutorial with tests</title>
+      <link>https://agounaris.github.io/2014/02/08/first-scala-tutorial-with-tests/</link>
+      <pubDate>Sat, 08 Feb 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2014/02/08/first-scala-tutorial-with-tests/</guid>
+      <description>Hello all,
 Well, this is my first video ever and I made some language mistakes and probably the flow could have been better. This was a &amp;ldquo;one try&amp;rdquo; video and I&amp;rsquo;ve left it like this to remind me of things that I should take care for the next one.
 So&amp;hellip;.
-A while ago when I started learning scala it would have been really helpfull for me to have a small tutorial to introduce me to the initial process of how to create a scala project.</description></item><item><title>Chrome dns tools</title><link>https://agounaris.github.io/2014/01/20/chrome-dns-tools/</link><pubDate>Mon, 20 Jan 2014 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2014/01/20/chrome-dns-tools/</guid><description>So looking around to improve my knowledge on how DNS works I fell into a &amp;ldquo;well hidden&amp;rdquo; chrome functionality that looks really cool!!
+A while ago when I started learning scala it would have been really helpfull for me to have a small tutorial to introduce me to the initial process of how to create a scala project.</description>
+    </item>
+    
+    <item>
+      <title>Chrome dns tools</title>
+      <link>https://agounaris.github.io/2014/01/20/chrome-dns-tools/</link>
+      <pubDate>Mon, 20 Jan 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2014/01/20/chrome-dns-tools/</guid>
+      <description>So looking around to improve my knowledge on how DNS works I fell into a &amp;ldquo;well hidden&amp;rdquo; chrome functionality that looks really cool!!
 Chrome tries to resolve urls while the user types (DNS Prefetching) and it has an internal functionality to analyze all the relevant events.
 Try to type in the address bar
-chrome://net-internals/#dns A couple of screen shots of two tools included in the functionality&amp;hellip;
-Timeline of events</description></item><item><title>Playing with the youtube api</title><link>https://agounaris.github.io/2014/01/11/playing-with-the-youtube-api/</link><pubDate>Sat, 11 Jan 2014 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2014/01/11/playing-with-the-youtube-api/</guid><description>Recently I&amp;rsquo;ve been asked how easy it will be to get the initial screenshot of a youtube video attached in an email template with as less pain as possible.
+chrome://net-internals/#dns  A couple of screen shots of two tools included in the functionality&amp;hellip;
+Timeline of events</description>
+    </item>
+    
+    <item>
+      <title>Playing with the youtube api</title>
+      <link>https://agounaris.github.io/2014/01/11/playing-with-the-youtube-api/</link>
+      <pubDate>Sat, 11 Jan 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2014/01/11/playing-with-the-youtube-api/</guid>
+      <description>Recently I&amp;rsquo;ve been asked how easy it will be to get the initial screenshot of a youtube video attached in an email template with as less pain as possible.
 A bit of googling told me that you can get all public information of a video using the following endpoing
-https://gdata.youtube.com/feeds/api/videos/videoid?v=2 By using one of my favourite songs&amp;hellip;
-http://www.youtube.com/watch?v=OguPPZ_7u60 The request becomes&amp;hellip;
-https://gdata.youtube.com/feeds/api/videos/OguPPZ_7u60?v=2 Just to test a bit whats going on I&amp;rsquo;ve tested the url with</description></item><item><title>Extending array_intersect to support multidimensional arrays</title><link>https://agounaris.github.io/2013/12/22/extending-array_intersect-to-support-multidimensional-arrays/</link><pubDate>Sun, 22 Dec 2013 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2013/12/22/extending-array_intersect-to-support-multidimensional-arrays/</guid><description>Recently I fell into a quite interesting problem.
+https://gdata.youtube.com/feeds/api/videos/videoid?v=2  By using one of my favourite songs&amp;hellip;
+http://www.youtube.com/watch?v=OguPPZ_7u60  The request becomes&amp;hellip;
+https://gdata.youtube.com/feeds/api/videos/OguPPZ_7u60?v=2  Just to test a bit whats going on I&amp;rsquo;ve tested the url with</description>
+    </item>
+    
+    <item>
+      <title>Extending array_intersect to support multidimensional arrays</title>
+      <link>https://agounaris.github.io/2013/12/22/extending-array_intersect-to-support-multidimensional-arrays/</link>
+      <pubDate>Sun, 22 Dec 2013 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2013/12/22/extending-array_intersect-to-support-multidimensional-arrays/</guid>
+      <description>Recently I fell into a quite interesting problem.
 Imagine that you want to send a mass email. You have two different set of arrays. One is your mailing list and the second is your filter email list. The final recipients will be the array_intersect of those 2 arrays. So far so good&amp;hellip;
-But what if the elements of the first array are also arrays? And what if you have stored values seperated by semicolon or any other character?</description></item><item><title>Weekend projects</title><link>https://agounaris.github.io/2013/12/22/weekend-projects/</link><pubDate>Sun, 22 Dec 2013 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2013/12/22/weekend-projects/</guid><description>Before I create this blog I had in my mind that bloging for software would have been extremely easy and that I would have constantly ideas to share with the community.
-I was totally wrong!! The hardest part of bloging is being unique and authentic. I see so many bloggers copying each other, so many tutorials looking &amp;ldquo;similar&amp;rdquo; and so my people doing this for the sake of blogging. I find no interest into doing tutorials that you can already google them, or writing a post sharing what I already know in order to convince a future employer of how awesome I am.</description></item><item><title>Profiling php scripts</title><link>https://agounaris.github.io/2013/11/23/profiling-php-scripts/</link><pubDate>Sat, 23 Nov 2013 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2013/11/23/profiling-php-scripts/</guid><description>After a looong time I decided to start &amp;ldquo;documenting&amp;rdquo; my php ideas and techniques in this personal blog.
+But what if the elements of the first array are also arrays? And what if you have stored values seperated by semicolon or any other character?</description>
+    </item>
+    
+    <item>
+      <title>Weekend projects</title>
+      <link>https://agounaris.github.io/2013/12/22/weekend-projects/</link>
+      <pubDate>Sun, 22 Dec 2013 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2013/12/22/weekend-projects/</guid>
+      <description>Before I create this blog I had in my mind that bloging for software would have been extremely easy and that I would have constantly ideas to share with the community.
+I was totally wrong!! The hardest part of bloging is being unique and authentic. I see so many bloggers copying each other, so many tutorials looking &amp;ldquo;similar&amp;rdquo; and so my people doing this for the sake of blogging. I find no interest into doing tutorials that you can already google them, or writing a post sharing what I already know in order to convince a future employer of how awesome I am.</description>
+    </item>
+    
+    <item>
+      <title>Profiling php scripts</title>
+      <link>https://agounaris.github.io/2013/11/23/profiling-php-scripts/</link>
+      <pubDate>Sat, 23 Nov 2013 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2013/11/23/profiling-php-scripts/</guid>
+      <description>After a looong time I decided to start &amp;ldquo;documenting&amp;rdquo; my php ideas and techniques in this personal blog.
 Just to start with something, I wanted to share with you a simple profiling technique which includes xdebug and webgrind.
-I&amp;rsquo;m using a mac and I will not get into details on how to setup php and xdebug. You can use the default php version that MacOS comes with, or handle different versions with homebrew, there are plenty of tutorials out there.</description></item><item><title>Hello World</title><link>https://agounaris.github.io/2013/06/21/hello-world/</link><pubDate>Fri, 21 Jun 2013 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2013/06/21/hello-world/</guid><description>Δουλέυει και στα Ελληνικά!
-Yet another test url @agounaris.</description></item><item><title>Hello World</title><link>https://agounaris.github.io/2013/06/21/hello-world/</link><pubDate>Fri, 21 Jun 2013 02:13:50 +0000</pubDate><guid>https://agounaris.github.io/2013/06/21/hello-world/</guid><description>Just my first post testing this thing :)
-Yet another test url @agounaris.</description></item><item><title>Asynchronous tasks with python3 concurrent futures</title><link>https://agounaris.github.io/1/01/01/asynchronous-tasks-with-python3-concurrent-futures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://agounaris.github.io/1/01/01/asynchronous-tasks-with-python3-concurrent-futures/</guid><description>+++ title = &amp;ldquo;Asynchronous tasks with python3 concurrent futures&amp;rdquo; date = 2015-02-16T02:13:50Z author = &amp;ldquo;Argyrios Gounaris&amp;rdquo; +++
+I&amp;rsquo;m using a mac and I will not get into details on how to setup php and xdebug. You can use the default php version that MacOS comes with, or handle different versions with homebrew, there are plenty of tutorials out there.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://agounaris.github.io/2013/06/21/hello-world/</link>
+      <pubDate>Fri, 21 Jun 2013 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2013/06/21/hello-world/</guid>
+      <description>Δουλέυει και στα Ελληνικά!
+ Yet another test url @agounaris.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://agounaris.github.io/2013/06/21/hello-world/</link>
+      <pubDate>Fri, 21 Jun 2013 02:13:50 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/2013/06/21/hello-world/</guid>
+      <description>Just my first post testing this thing :)
+ Yet another test url @agounaris.</description>
+    </item>
+    
+    <item>
+      <title>Asynchronous tasks with python3 concurrent futures</title>
+      <link>https://agounaris.github.io/1/01/01/asynchronous-tasks-with-python3-concurrent-futures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/1/01/01/asynchronous-tasks-with-python3-concurrent-futures/</guid>
+      <description>+++ title = &amp;ldquo;Asynchronous tasks with python3 concurrent futures&amp;rdquo; date = 2015-02-16T02:13:50Z author = &amp;ldquo;Argyrios Gounaris&amp;rdquo; +++
 Today Greece is again all over the news because of the Eurogroup and the new deal the Greek governemnt tries to achieve through its representatives. Why not check out which website has a title about Greece on it&amp;rsquo;s front page as fast as possible.
-Python 3.2 introduced concurrent futures which is actually a simple interface for asynchronous parallel tasks.</description></item><item><title>Migrate legacy md5 passwords to sha on symfony and fos user bundle</title><link>https://agounaris.github.io/1/01/01/migrate-legacy-md5-passwords-to-sha-on-symfony-and-fos-user-bundle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://agounaris.github.io/1/01/01/migrate-legacy-md5-passwords-to-sha-on-symfony-and-fos-user-bundle/</guid><description>+++ title = &amp;ldquo;Migrate legacy md5 passwords to sha on symfony and fos user bundle&amp;rdquo; date = 2015-02-02T02:13:50Z author = &amp;ldquo;Argyrios Gounaris&amp;rdquo; +++
-Recently I came upon a problem where the passwords of the current user base are hashed in md5 and we had to migrate them to sha. Checking around the web how others have solved this didn&amp;rsquo;t help a lot. Asking your user to login to change the password or double encode the md5 one didn&amp;rsquo;t sound like clever solutions.</description></item></channel></rss>
+Python 3.2 introduced concurrent futures which is actually a simple interface for asynchronous parallel tasks.</description>
+    </item>
+    
+    <item>
+      <title>Migrate legacy md5 passwords to sha on symfony and fos user bundle</title>
+      <link>https://agounaris.github.io/1/01/01/migrate-legacy-md5-passwords-to-sha-on-symfony-and-fos-user-bundle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://agounaris.github.io/1/01/01/migrate-legacy-md5-passwords-to-sha-on-symfony-and-fos-user-bundle/</guid>
+      <description>+++ title = &amp;ldquo;Migrate legacy md5 passwords to sha on symfony and fos user bundle&amp;rdquo; date = 2015-02-02T02:13:50Z author = &amp;ldquo;Argyrios Gounaris&amp;rdquo; +++
+Recently I came upon a problem where the passwords of the current user base are hashed in md5 and we had to migrate them to sha. Checking around the web how others have solved this didn&amp;rsquo;t help a lot. Asking your user to login to change the password or double encode the md5 one didn&amp;rsquo;t sound like clever solutions.</description>
+    </item>
+    
+  </channel>
+</rss>
