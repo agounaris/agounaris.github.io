@@ -115,8 +115,9 @@ A while ago when I started learning scala it would have been really helpfull for
       <description>So looking around to improve my knowledge on how DNS works I fell into a &amp;ldquo;well hidden&amp;rdquo; chrome functionality that looks really cool!!
 Chrome tries to resolve urls while the user types (DNS Prefetching) and it has an internal functionality to analyze all the relevant events.
 Try to type in the address bar
-chrome://net-internals/#dns  A couple of screen shots of two tools included in the functionality&amp;hellip;
-Timeline of events</description>
+chrome://net-internals/#dns A couple of screen shots of two tools included in the functionality&amp;hellip;
+Timeline of events
+![dns tool 1]({{ site.</description>
     </item>
     
     <item>
@@ -127,9 +128,9 @@ Timeline of events</description>
       <guid>/2014/01/11/2014-01-11-playing-with-the-youtube-api/</guid>
       <description>Recently I&amp;rsquo;ve been asked how easy it will be to get the initial screenshot of a youtube video attached in an email template with as less pain as possible.
 A bit of googling told me that you can get all public information of a video using the following endpoing
-https://gdata.youtube.com/feeds/api/videos/videoid?v=2  By using one of my favourite songs&amp;hellip;
-http://www.youtube.com/watch?v=OguPPZ_7u60  The request becomes&amp;hellip;
-https://gdata.youtube.com/feeds/api/videos/OguPPZ_7u60?v=2  Just to test a bit whats going on I&amp;rsquo;ve tested the url with</description>
+https://gdata.youtube.com/feeds/api/videos/videoid?v=2 By using one of my favourite songs&amp;hellip;
+http://www.youtube.com/watch?v=OguPPZ_7u60 The request becomes&amp;hellip;
+https://gdata.youtube.com/feeds/api/videos/OguPPZ_7u60?v=2 Just to test a bit whats going on I&amp;rsquo;ve tested the url with</description>
     </item>
     
     <item>
